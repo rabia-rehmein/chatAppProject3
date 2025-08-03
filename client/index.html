@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dropdown">
+    <h1 class="dropdown-title">Chatify</h1>
+    <div class="dropdown-content">
+        <a href="#" id="loginLink">Login</a>
+        <a href="#" id="chatLink">Chat</a>
+    </div>
+  </div>
+  <div id="chat">
+    <ul id="messages"></ul>
+    <input id="messageInput" autocomplete="off" placeholder="Type a message..." />
+    <button id="sendBtn">Send</button>
+      </div>
+
+      <div id="loginPage">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Enter Username" />
+    <br><br>
+    <input type="password" id="password" placeholder="Enter Password" />
+    <br><br>
+    <button id="loginBtn">Login</button>
+  </div>
+  <div id="homePage">
+    <h1>Welcome to Chatify</h1>
+    <p>Connect instantly and chat in real-time with your friends!</p>
+</div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
